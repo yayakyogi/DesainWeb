@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modul 7</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Aplikasi Kasir Sederhana</h1>
+        <form name="Tabel">
+            <table>
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Produk</th>
+                    <th>Harga Satuan</th>
+                    <th>Jumlah Beli</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Buavita Jambu-->
+                        <td>1</td>
+                        <td>Buavita Jambu</td>
+                        <td>Rp 27.000,00</td>
+                        <td><input class="input" type="text" name="buavita"> pcs</td>
+                    </tr>
+                    <tr>
+                        <!-- Suky suky-->
+                        <td>2</td>
+                        <td>Suky Suky</td>
+                        <td>Rp 9.000,00</td>
+                        <td><input class="input" type="text" name="suky"> pcs</td>
+                    </tr>
+                    <tr>
+                        <!-- Luwak White Koffie-->
+                        <td>3</td>
+                        <td>Luwak White Koffie</td>
+                        <td>Rp 19.000,00</td>
+                        <td><input class="input" type="text" name="luwak"> pcs</td>
+                    </tr>
+                    <tr>
+                        <!-- KitKat-->
+                        <td>4</td>
+                        <td>KitKat 6 pcs</td>
+                        <td>Rp 25.000,00</td>
+                        <td><input class="input" type="text" name="kitkat"> pcs</td>
+                    </tr>
+                    <tr>
+                        <!-- Regal Magnum-->
+                        <td>5</td>
+                        <td>Regal Maknum</td>
+                        <td>Rp 16.000,00</td>
+                        <td><input class="input" type="text" name="magnum"> pcs</td>
+                    </tr>
+                </table>
+            </tbody>
+            <input type="button" class="btn" onClick="cekHasil();" value="&radic; Hitung"><br>
+            <div class="hasil">
+                <label>Total Bayar </label>
+                <input class="input" type="text" name="Hasil">
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function cekHasil(){
+        var data = document.Tabel;
+        var hrgBvt = 27000 * parseInt(data.buavita.value);
+        var hrgSk = 9000 * parseInt(data.suky.value);
+        var hrgLwk = 19000 * parseInt(data.luwak.value);
+        var hrgKkt = 25000 * parseInt(data.kitkat.value);
+        var hrgMgnm = 16000 * parseInt(data.magnum.value);
+        var hasil = hrgBvt+hrgSk+hrgLwk+hrgKkt+hrgMgnm;
+        data.Hasil.value='Rp '+hasil+',00';
+    }
+</script>
+</html>

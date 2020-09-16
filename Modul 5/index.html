@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modul 5</title>
+    <style>
+        h1{
+            text-align: center;
+            padding: 10px;
+            box-shadow: 1px 2px 8px black;
+            background-color: darkkhaki;
+            animation: title 3s infinite;
+        }
+        .form-content .input{
+            width: 50px;
+            padding: 12px;
+            border-radius: 25px;
+            box-shadow: 1px 2px 8px black;
+            transition: transform 1s, width 2s;
+        }
+        .form-content .input:focus{
+            width: 200px;
+            transform: rotate(360deg);
+            border-radius: 15px;
+        }
+        .btn-login{
+            padding: 15px;
+            background-color: white;
+            color: black;
+            transition: margin 3s;
+            transition: background 2s, margin 1s;
+        }
+        .btn-login:hover{
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            padding: 15px;
+            margin-left: 30px;
+        }
+        @keyframes title{
+            0%{
+                transform: rotateX(0deg);
+                background-color: rgba(0,0,0,0.8);
+                color: white;
+            }
+            100%{
+                transform: rotateX(360deg) scale(1.2);
+                background-color: darkkhaki;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang</h1>
+    <form action="index.html" method="GET" class="form-content">
+        <label>Username</label>
+        <input type="text" class="input" name="username" placeholder="Username anda"><br><br>
+        <label>Password</label>
+        <input type="text" class="input" name="password" placeholder="Password anda"><br><br>
+        <input type="submit" class="btn-login" value="&#10093;&#10093; Login">
+    </form>
+</body>
+</html>

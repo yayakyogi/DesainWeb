@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modul 6</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 980px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            border: 3px solid white;
+            background-color: purple;
+            color: white;
+            box-shadow: 1px 2px 8px black;
+            border-radius: 10px;
+        }
+        h2{
+            color: purple;
+        }
+        .artikel{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            padding: 20px;
+        }
+        .isi-artikel{
+            padding: 5px;
+        }
+        @media only screen and (min-width: 481px) and (max-width: 720px){
+            body{
+                width: auto;
+            }
+            h1{
+                background-color: white;
+                color: purple;
+                border: 3px solid purple;
+                box-shadow: none;
+            }
+            .artikel{
+                grid-template-columns: repeat(2,auto);
+                grid-template-rows: repeat(2,auto);
+            }
+        }
+        @media only screen and (max-width:480px){
+            body{
+                width: auto;
+                border: 1px solid orange;
+            }
+            h1{
+                border: none;
+                box-shadow: none;
+                background-color: white;
+                color: purple;
+            }
+            .artikel{
+                grid-template-columns: repeat(1,auto);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang</h1>
+    <p>
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. THe quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+    </p>
+    <div class="artikel">
+        <div class="isi-artikel">
+            <h2>Artkel <sup>1</sup></h2>
+            <p class=>
+                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+            </p>
+            <a href="#">&raquo; Baca selengkapnya...</a>
+        </div>
+        <div class="isi-artikel">
+            <h2>Artikel 2</h2>
+            <p>
+                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+            </p>
+            <a href="#">&raquo; Baca selengkapnya...</a>
+        </div>
+        <div class="isi-artikel">
+            <h2>Artikel <sub>3</sub></h2>
+            <p>
+                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                The quick brown fox jumps over the lazy dog. THe quick brown fox jumps over the lazy dog.
+            </p>
+            <a href="#">&raquo; Baca selengkapnya...</a>
+        </div>
+    </div>
+    <p>
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. THe quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumsp over the lazy dog. The quick brown fox jumps over the lazy dog. 
+    </p>
+</body>
+</html>

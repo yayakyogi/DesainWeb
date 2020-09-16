@@ -1,0 +1,84 @@
+.header{
+    position: relative;
+    text-align: center;
+    background-color: royalblue;
+    border-radius: 40px;
+    border: 2px solid white;
+    box-shadow: 1px 2px 5px black;
+}
+.img1{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid white;
+    position: absolute;
+    left: 440px;
+    top: 10px;
+}
+.img2{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid white;
+    position: absolute;
+    right: 440px;
+    top: 10px;
+}
+h1{
+    margin-top: 20px;
+    color: white;
+}
+.btn{
+    padding: 5px 10px;
+    box-shadow: 1px 2px 2px black;
+    background-color: white;
+    font-weight: bold;
+    margin: 20px 0 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 1px 2px 8px black;
+    font-weight: bold;
+    outline: lightblue auto 1px;
+    background-color: royalblue;
+    color: wheat;
+}
+.btn:focus{
+    border: none;
+    outline: lightblue auto 1px;
+    background-color: royalblue;
+    color: wheat;
+}
+/* Halaman Artikel */
+h3{
+    color: blue;
+}
+.img-content{
+    column-count: 2;
+    column-gap: 10px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px black;
+    margin: 20px 0 0 100px;
+}
+.input{
+    margin : 10px 0 0 20px;
+}
+.btn-login{
+    background-color: royalblue;
+    border: 1px solid white;
+    box-shadow: 1px 2px 2px black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin: 20px 0 0 110px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.btn-login:hover{
+    padding: 6px 11px;
+    box-shadow: 1px 2px 8px black;
+    font-weight: bold;
+}
